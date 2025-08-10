@@ -37,7 +37,7 @@ struct ContentView: View {
                         if project.stage == "Currently working" {
                             if project.image != nil {
                                 HStack {
-                                    VStack(alignment: .leading,
+                                    VStack(alignment: .center,
                                            content: {
                                             Text(project.description)
                                     })
@@ -54,12 +54,14 @@ struct ContentView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .cornerRadius(10)
+                                                .frame(maxWidth: 300, maxHeight: 200)
                                         }
+                                        .frame(maxWidth: 300)
                                     }
                                 }
                             }
                             else {
-                                VStack(alignment: .leading,
+                                VStack(alignment: .center,
                                        content: {
                                     NavigationLink(destination: ProjectDetailView(project: project, stage: project.stage))
                                     {
@@ -81,11 +83,9 @@ struct ContentView: View {
                         if project.stage == "To do" {
                             if project.image != nil {
                                 HStack {
-                                    VStack(alignment: .leading,
-                                           content: {
-                                        Text(project.description + ":")
-                                        Text(String(project.queue))
-                                    })
+                                    Text(project.description + ":")
+                                    Text(String(project.queue))
+                                    
                                     
                                     Spacer(minLength: 40)
                                     
@@ -99,12 +99,15 @@ struct ContentView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .cornerRadius(10)
+                                                .frame(maxWidth: 300, maxHeight: 200)
+                                            
                                         }
+                                        .frame(maxWidth: 300)
                                     }
                                 }
                             }
                             else {
-                                VStack(alignment: .leading,
+                                VStack(alignment: .center,
                                        content: {
                                     NavigationLink(destination: ProjectDetailView(project: project, stage: project.stage))
                                     {
@@ -143,7 +146,9 @@ struct ContentView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .cornerRadius(10)
+                                                .frame(maxWidth: 300, maxHeight: 200)
                                         }
+                                        .frame(maxWidth: 300)
                                     }
                                 }
                             }
@@ -182,6 +187,36 @@ struct ContentView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Add project", systemImage: "plus") {
                         self.showingAddProjectView = true
+                    }
+                }
+                ToolbarItem(placement: .bottomBar) {
+                    HStack {
+                        ZStack {
+                            Color.gray.opacity(0.2)
+                                .edgesIgnoringSafeArea(.all)
+                                .frame(height: 60)
+                                .cornerRadius(20)
+                            
+                            Image(systemName: "list.dash.header.rectangle")
+                                .accentColor(.gray.opacity(0.5))
+                                .contentMargins(10)
+                                .padding(10)
+                                .font(.title3)
+                                .disabled(true)
+                        }
+                        
+                        ZStack {
+                            Color.gray.opacity(0.2)
+                                .edgesIgnoringSafeArea(.all)
+                                .frame(height: 60)
+                                .cornerRadius(20)
+                            
+                            NavigationLink(destination: StitchTrackerView(), label: {
+                                Image(systemName: "candybarphone")
+                                    .font(.title)
+                            })
+                            .contentMargins(10)
+                        }
                     }
                 }
             }

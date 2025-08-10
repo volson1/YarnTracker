@@ -14,6 +14,7 @@
 		0B62B15E2CAB2F4D00F55488 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62B15D2CAB2F4D00F55488 /* ProjectDetailView.swift */; };
 		0B796F302C9CACDB005CFAFA /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B796F2F2C9CACDB005CFAFA /* ProjectList.swift */; };
 		0B796F322C9CAE3D005CFAFA /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B796F312C9CAE3D005CFAFA /* AddProjectView.swift */; };
+		CBB0B3D42E491FC100F02E32 /* StitchTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB0B3D32E491FC100F02E32 /* StitchTrackerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0B62B15D2CAB2F4D00F55488 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		0B796F2F2C9CACDB005CFAFA /* ProjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
 		0B796F312C9CAE3D005CFAFA /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		CBB0B3D32E491FC100F02E32 /* StitchTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StitchTrackerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				0B62B15D2CAB2F4D00F55488 /* ProjectDetailView.swift */,
 				0B796F312C9CAE3D005CFAFA /* AddProjectView.swift */,
 				0B796F2F2C9CACDB005CFAFA /* ProjectList.swift */,
+				CBB0B3D32E491FC100F02E32 /* StitchTrackerView.swift */,
 				0B258B532C9B579100611A09 /* Assets.xcassets */,
 				0B258B552C9B579100611A09 /* Preview Content */,
 			);
@@ -150,6 +153,7 @@
 				0B258B502C9B578F00611A09 /* YarnTrackerApp.swift in Sources */,
 				0B62B15E2CAB2F4D00F55488 /* ProjectDetailView.swift in Sources */,
 				0B796F322C9CAE3D005CFAFA /* AddProjectView.swift in Sources */,
+				CBB0B3D42E491FC100F02E32 /* StitchTrackerView.swift in Sources */,
 				0B796F302C9CACDB005CFAFA /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
