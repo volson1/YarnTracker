@@ -193,8 +193,7 @@ struct ContentView: View {
                     HStack {
                         ZStack {
                             Color.gray.opacity(0.2)
-                                .edgesIgnoringSafeArea(.all)
-                                .frame(height: 60)
+                                .frame(height: 50)
                                 .cornerRadius(20)
                             
                             Image(systemName: "list.dash.header.rectangle")
@@ -207,8 +206,7 @@ struct ContentView: View {
                         
                         ZStack {
                             Color.gray.opacity(0.2)
-                                .edgesIgnoringSafeArea(.all)
-                                .frame(height: 60)
+                                .frame(height: 50)
                                 .cornerRadius(20)
                             
                             NavigationLink(destination: StitchTrackerView(), label: {
